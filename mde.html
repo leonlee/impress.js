@@ -1,0 +1,341 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Dive into MDE</title>
+        <meta name="description" content="fun with programming" />
+        <meta name="author" content="Leon Lee" />
+
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/mde.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div id="impress" data-transition-duration="800">
+            <div id="intro" class="step slide" data-x="-1000" data-y="-650" data-z="0" data-scale="3">
+                <div style="height:500px;align-content:center;">
+                    <h2 class="title1"
+                        style="margin-top:150px;margin-bottom:100px;">Dive into MDE</h2>
+                    <h6 style="font-size:20px;color:#ffff66">Keep Fool, Stay Hungry!</h6>
+                    <img src="gan.png" style="border:0px; max-width:150px; max-height:150px"/>
+                </div>
+            </div>
+            <div id="outline" class="step slide red" data-x="-1000" data-y="-2700" data-z="-100" data-scale="0.6" data-rotate-x="0">
+                <div class="s-header">Outline</div>
+                <div class="s-body">
+                    <ul>
+                        <li> 为什么做技术分享？ </li>
+                        <li> OOP的必知必会 </li>
+                        <li>MDE </li>
+                        <li>Business Value</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-3300" data-z="-300" data-scale="0.6" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-path">为什么做技术分享？</div>
+                <div class="s-header">学习意识</div>
+                <div class="s-body">
+                    <br/><br/>
+                    <p>
+                    孔子曰：「生而知之者，上也；學而知之者，次也；困而學之，又其次也；困而不學，民斯為下矣。」
+                    </p>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1900" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="0" data-rotate-y="180">
+                <div class="s-path">为什么做技术分享？</div>
+                <div class="s-header">悔和自省</div>
+                <div class="s-body">
+                    <br/><br/>
+                    <p>
+                    曾子曰：「吾日三省吾身：為人謀而不忠乎？與朋友交而不信乎？傳不習乎？」
+                    </p>
+                    <br/><br/>
+                    <p>
+                    阳明曰：“悔悟是去病之药，然以改之为贵。若留滞于中，则又因药发病。”
+                    </p>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-100" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-path">OOP的必知必会</div>
+                <div class="s-header">A-E-I-P</div>
+                <div class="s-body">
+                    <div class="center">
+                        <img src="img/4-Pillars-of-OOP.png" width="100%"/>
+                    </div>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-100" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="90" data-rotate-y="0">
+                <div class="s-path">OOP的必知必会</div>
+                <div class="s-header">A-E-I-P</div>
+                <div class="s-body" style="line-height: 200%;">
+                    <ul>
+                        <li><b>A</b>bstraction: provide the <b>essential</b> features and hiding the <b>details </b> of the implementation from the <b>outside</b>.</li>
+                        <li><b>E</b>ncapsulation: <b>restricting</b> access of some of the fields and method of a class from the outside world and <b>binding together</b> related data and methods.</li>
+                        <li><b>I</b>nheritance: collect <b>common features</b> in a common class and defines a relationship between two classes <b>is(-a-type-of)-a</b>. </li>
+                        <li><b>P</b>olymorphism: invoke the <b>same operation</b> on objects of different classes that have the same parent class and they will all perform it in <b>their own way</b>. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="750" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-path">OOP的必知必会</div>
+                <div class="s-header">Business Use Case</div>
+                <div class="s-body">
+                    <div class="left"  style="width:50%;">
+                        <img src="img/Use_case_restaurant_model.png" width="500"/>
+                    </div>
+                    <div class="right" style="width:50%;">
+                        <p>A business Use Case Diagram depicts a model of several business <b>goals</b>
+                        which represents the interactions between the <b>business system</b> and its primary <b>stakeholders </b>(business actors and business workers).</p>
+                        <br/>
+                        Keypoints:
+                        <ul>
+                            <li>System Boundary</li>
+                            <li>Goals</li>
+                            <li>Stakeholders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="step slide red" data-x="750" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="90" data-rotate-y="0">
+                <div class="s-path">OOP的必知必会</div>
+                <div class="s-header">Patterns</div>
+                <div class="s-body">
+                    <ul>
+                        <li><b>Association</b>: An association simply describes
+                            any kind of working relation. The two object are
+                            instances of completely unrelated classes, and none
+                            of the object control the lifecycle of the other
+                            one. They just collaborate to accomplish their own
+                            goals.</li>
+                        <li><b>Aggregation</b>: describes a relationship in
+                            which one object belongs to another object and implies a
+                            relationship where the child can exist independently of the parent. </li>
+                        <li><b>Composition</b>: describes a relationship in
+                            which one object completely controls another object
+                            that has not an independent lifecycle.</li>
+                                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-2800" data-y="-3450" data-scale="0.6" data-z="-700">
+                <div class="s-path">OOP的必知必会</div>
+                <div class="s-header">Patterns</div>
+                <div class="s-body">
+                    <ul>
+                        <li><b>Interface</b>: also known as protocol, is an alternative
+                            to inheritance for two unrelated classes to
+                            communicate with each other.</li>
+                        <li><b>Delegation</b>: is a way to make composition as powerful for
+                            reuse as inheritance. In delegation,
+                            two objects are involved in handling a request: a
+                            receiving object delegates operations to its
+                            delegate.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-5000" data-z="-520">
+                <div class="s-path">OOP的必知必会</div>
+                <div class="s-header">Principles</div>
+                <div class="s-body">
+                    <img src="img/oop-principles.jpg" class="center"
+                    width="1000px"/>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-5000" data-z="-520" data-rotate-y="180">
+                <div class="s-path">OOP的必知必会</div>
+                <div class="s-header">Principles</div>
+                <div class="s-body">
+                    <ul>
+                        <li><b>SRP</b>: Every object should have a single
+                            responsibility, i.e. a single reason to change.</li>
+                        <li><b>OCP</b>: Objects should be open for extension,
+                            but closed for modification. </li>
+                        <li><b>LSP</b>: You should be able to use any derived
+                            class in place of a parent class and it should
+                            behave in the same manner with no modification. </li>
+                        <li><b>ISP</b>: Clients should not be forced to depend
+                            on interfaces they do not use. Encourage to splits interfaces
+                            that are very large into smaller and more specific
+                            ones</li>
+                        <li><b>DIP</b>: Classes should depend on abstractions
+                            for their dependencies. Basically, they say that
+                            classes should rely on interfaces or abstract
+                            classes for any outside dependencies they need, and
+                            not instantiate concrete objects themselves. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-6000" data-z="-520" data-rotate-y="180">
+                <div class="s-path">MDE</div>
+                <div class="s-header">渊源</div>
+                <div class="s-body">
+                    <ul>
+                        <li>行业背景（被动）</li>
+                        <li>开源系统（主动）</li>
+                        <li>懒（天性）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-6000" data-z="-520" data-rotate-y="90">
+                <div class="s-path">MDE</div>
+                <div class="s-header">M-E</div>
+                <div class="s-body">
+                    <img src="img/metadata.png" class="center" width="75%"/>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-6000" data-z="-520" data-rotate-x="90" data-rotate-y="0">
+                <div class="s-path">MDE</div>
+                <div class="s-header">M-E</div>
+                <div class="s-body">
+                    <img src="img/inode_with_signatures.jpg" class="center" width="75%"/>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-8000" data-z="-520" data-rotate-y="0">
+                <div class="s-path">MDE</div>
+                <div class="s-header">M-E</div>
+                <div class="s-body">
+                    <b>Game Engine</b>: a suite of tools in
+                    addition to <b>reusable software components</b>. These
+                    tools are generally provided in an integrated
+                    development environment to enable simplified, rapid
+                    development of games in a <b>data-driven manner</b>. Game
+                    engine developers attempt to <b>"pre-invent the wheel"</b>
+                    by developing robust software suites which include
+                    many elements a game developer may need to build a
+                    game. Most game engine suites provide facilities
+                    that ease development. These game engines are
+                    sometimes called <b>"middleware"</b> because, as with the
+                    business sense of the term, they provide a flexible
+                    and reusable software platform which provides all
+                    the core functionality needed, right out of the box,
+                    to develop a game application while reducing costs,
+                    complexities, and time-to-market.
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-8000" data-z="-520" data-rotate-y="90">
+                <div class="s-path">MDE</div>
+                <div class="s-header">Keypoints</div>
+                <div class="s-body">
+                  Goto P4,P9 of mde.key
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-8000" data-z="-520" data-rotate-x="90" data-rotate-y="0">
+                <div class="s-path">Business Value</div>
+                <div class="s-header">Business Value</div>
+                <div class="s-body">
+                    <b>Value:</b>
+                    <ul>
+                        <li>Shareholder Value</li>
+                        <li>Customer Value</li>
+                        <li>Employee knowledge</li>
+                    </ul>
+                    <b>Capacities:</b>
+                    <ul>
+                        <li>Usability</li>
+                        <li>Functionality</li>
+                        <li>Availability</li>
+                        <li>Reliability, recoverability</li>
+                        <li>Performance (throughput, response time, predictability, capacity, etc.)</li>
+                        <li>Security</li>
+                        <li>Agility</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doyourbestwrong" class="step slide red hidden" data-x="-1000" data-y="-9000" data-z="-520" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-body center" style="font-size:72px;">
+                    <br/><br/>
+                    <strong class="big">干</strong>漂亮<span style="color:black;">得</span>！
+                </div>
+            </div>
+            <div id="doyourbest" class="step slide red hidden" data-x="-1000" data-y="-9000" data-z="-520" data-rotate-x="90" data-rotate-y="0">
+                <div class="s-body center" style="font-size:72px;">
+                    <br/><br/>
+                    <strong class="big">干</strong><span style="color:black">得</span>漂亮！
+                </div>
+            </div>
+
+            <div id="overview" class="step" data-x="-1000" data-y="-1500" data-scale="5"></div>
+        </div>
+        <script src="js/impress.js"></script>
+        <script src="js/zepto.min.js"></script>
+        <script>
+var api = impress();
+api.init();
+var lastStep = false;
+var showtime = false;
+Zepto(function($) {
+    function showPath() {
+        $('.slide').each(function(index, slide) {
+            //  $(slide).addClass("slide-path");
+        });
+    }
+
+    function hidePath() {
+        $('.slide').each(function(index, slide) {
+            // $(slide).removeClass("slide-path");
+        });
+    }
+
+    $(document).on("impress:stepenter", function(event) {
+        var id = $(event.target).attr('id');
+        switch (id) {
+            case "overview":
+                showPath();
+                break;
+            case "doyourbestwrong":
+                if (!showtime){
+                    api.goto("overview");
+                }
+                break;
+            case "doyourbest":
+                if (!showtime){
+                    api.goto("overview");
+                }
+                break;
+        }
+
+    });
+
+    $(document).on("impress:stepleave", function(event) {
+        var id = $(event.target).attr('id');
+        switch (id) {
+            case "intro":
+                $("#intro").addClass("intro-past");
+                break;
+            case "overview":
+                lastStep = false;
+                hidePath();
+                break;
+        }
+    });
+
+    $(document).on("keyup", function(event) {
+        switch(event.keyCode) {
+            case 27:
+                if (!lastStep) {
+                    lastStep = $('.active').attr('id');
+                    api.goto("overview");
+                } else {
+                    api.goto(lastStep);
+                    lastStep = false;
+                }
+                break;
+            case 112:
+                $("#doyourbestwrong").removeClass("hidden");
+                showtime = true;
+                api.goto("doyourbestwrong");
+                break;
+            case 113:
+                $("#doyourbest").removeClass("hidden");
+                showtime = true;
+                api.goto("doyourbest");
+                break;
+        }
+    });
+});
+
+        </script>
+    </body>
+</html>

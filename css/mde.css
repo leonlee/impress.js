@@ -1,0 +1,165 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+    background: #000;
+}
+
+ul {
+    list-style: circle;
+    padding-left: 60px;
+}
+
+ul ul {
+    list-style: square;
+}
+
+b {
+    color: #ffff66;
+}
+
+strong {
+    color: #ffff66;
+}
+
+.slide{
+    width: 1280px;
+    height: 750px;
+    background: #000;
+    border: 0px solid white;
+}
+
+.future{
+    /* display: none; */
+}
+
+.past{
+    /* display: none; */
+    background: #c71d01;
+}
+
+
+.slide{
+    width: 1280px;
+    height: 750px;
+    background: #000;
+    border: 0px solid white;
+}
+#intro{
+    background: none;
+}
+
+
+.intro-past{
+    display: block;
+    background: #000;
+}
+
+#intro{
+    margin: 40px 0;
+    line-height: 150%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "PT Sans";
+}
+
+#intro .title1{
+    color: #fff;
+    align-content: middle;
+}
+#intro .title2{
+    color: #B33535;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.red{
+    background: #d11f01;
+    color: #FFFFFF;
+    font-family: tahoma;
+    font-size: 90px;
+    font-weight: bold;
+    margin: auto;
+    /* padding: 250px 0; */
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*
+    The last step is an overview.
+    There is no content in it, so we make sure it's not visible because we want
+    to be able to click on other steps.
+
+*/
+#overview{
+    display: none;
+}
+
+#outline ul{
+    line-height: 150%;
+}
+
+/*
+    We also make other steps visible and give them a pointer cursor using the
+    `impress-on-` class.
+*/
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+.s-path{
+    float: left;
+    line-height: 120%;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+    font-family: "PT Sans";
+    margin-bottom: 20px;
+}
+.s-header{
+    float: right;
+    line-height: 120%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: right;
+    font-family: "PT Sans";
+    margin-bottom: 20px;
+}
+.s-body{
+    clear: right;
+    line-height: 150%;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: left;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+div.center{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+div.hidden{
+    display: none;
+}
+
+div.left{
+    float: left;
+}
+div.right{
+    float: right;
+}
+div.clear{
+    clear: all;
+}
+img.center{
+    display: block;
+    margin: 0 auto;
+}
+.slide-path{
+    display: block;
+    background: #c71d01;
+}
+strong.big{
+    font-size: 150px;
+}
