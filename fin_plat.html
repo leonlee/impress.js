@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Account Modeling</title>
+        <meta name="description" content="fun with programming" />
+        <meta name="author" content="Leon Lee" />
+
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link href="css/mde.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <div id="impress" data-transition-duration="800">
+            <div id="intro" class="step slide" data-x="-1000" data-y="-650" data-z="0" data-scale="3">
+                <div style="height:500px;align-content:center;">
+                    <h2 class="title1"
+                        style="margin-top:150px;margin-bottom:100px;">Account Modeling</h2>
+                    <h6 style="font-size:20px;color:#ffff66">Keep Foolish, Stay Hungry!</h6>
+                    <img src="gan.png" style="border:0px; max-width:150px; max-height:150px"/>
+                </div>
+            </div>
+            <div id="outline" class="step slide red" data-x="-1000" data-y="-2700" data-z="-100" data-scale="0.6" data-rotate-x="0">
+                <div class="s-header">Outline</div>
+                <div class="s-body">
+                    <ul>
+                        <li>业务域</li>
+                        <li>业务用例</li>
+                        <li>核心实体</li>
+                        <li>交易层思路</li>
+                        <li>业务层思路</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1000" data-y="-3300" data-z="-300" data-scale="0.6" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-path">业务域</div>
+                <div class="s-header">Account Model</div>
+                <div class="s-body">
+                    <ul>
+                        <li>定义账户结构</li>
+                        <li>跟踪资金变动</li>
+                        <li>执行账户和资金校验</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-1900" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="0" data-rotate-y="180">
+                <div class="s-path">业务用例</div>
+                <div class="s-header">业务用例</div>
+                <div class="s-body">
+                    <ul>
+                        <li>定义会计科目(Chart Of Accounts)</li>
+                        <li>收集原始凭证(Source Documents)</li>
+                        <li>编制会计分录(Accounting Entry)</li>
+                        <li>登记日记账薄(Journals)</li>
+                        <li>登记分类帐、总账(Ledgers)</li>
+                        <li>试算平衡表(Trial Balance)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-100" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-path">核心实体</div>
+                <div class="s-header">核心实体</div>
+                <div class="s-body">
+                    <ul>
+                        <li>Client</li>
+                        <li>AccountType</li>
+                        <li>Account</li>
+                        <li>CoA</li>
+                        <li>GL</li>
+                        <li>LedgerEntry</li>
+                        <li>Batch</li>
+                        <li>FiscalPeriod</li>
+                        <li>Currency</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="-100" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="90" data-rotate-y="0">
+                <div class="s-path">交易层思路</div>
+                <div class="s-header">交易层思路</div>
+                <div class="s-body" style="line-height: 200%;">
+                    <ul>
+                        <li>Transaction Processing</li>
+                        <li>定义交易类型</li>
+                        <li>组织交易逻辑</li>
+                        <li>输出账户分录</li>
+                        <li>无状态维护，无流程维护</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide red" data-x="750" data-y="-3450" data-z="-700" data-scale="0.6" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-path">业务层思路</div>
+                <div class="s-header">业务层思路</div>
+                <div class="s-body">
+                    <ul>
+                        <li>Business Processing</li>
+                        <li>Approvable Document</li>
+                        <li>面向业务流程</li>
+                        <li>定义流程环节、条件和参与者</li>
+                        <li>基于状态自动流转，集成BPMS</li>
+                        <li>流程结束，输出交易类型和交易数据</li>
+                        <li><a href="./mde.html">MDE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="doyourbestwrong" class="step slide red hidden" data-x="-1000" data-y="-9000" data-z="-520" data-rotate-x="0" data-rotate-y="0">
+                <div class="s-body center" style="font-size:72px;">
+                    <br/><br/>
+                    <strong class="big">干</strong>漂亮<span style="color:black;">得</span>！
+                </div>
+            </div>
+            <div id="doyourbest" class="step slide red hidden" data-x="-1000" data-y="-9000" data-z="-520" data-rotate-x="90" data-rotate-y="0">
+                <div class="s-body center" style="font-size:72px;">
+                    <br/><br/>
+                    <strong class="big">干</strong><span style="color:black">得</span>漂亮！
+                </div>
+            </div>
+
+            <div id="overview" class="step" data-x="-1000" data-y="-1500" data-scale="5"></div>
+        </div>
+        <script src="js/impress.js"></script>
+        <script src="js/zepto.min.js"></script>
+        <script>
+var api = impress();
+api.init();
+var lastStep = false;
+var showtime = false;
+Zepto(function($) {
+    function showPath() {
+        $('.slide').each(function(index, slide) {
+            //  $(slide).addClass("slide-path");
+        });
+    }
+
+    function hidePath() {
+        $('.slide').each(function(index, slide) {
+            // $(slide).removeClass("slide-path");
+        });
+    }
+
+    $(document).on("impress:stepenter", function(event) {
+        var id = $(event.target).attr('id');
+        switch (id) {
+            case "overview":
+                showPath();
+                break;
+            case "doyourbestwrong":
+                if (!showtime){
+                    api.goto("overview");
+                }
+                break;
+            case "doyourbest":
+                if (!showtime){
+                    api.goto("overview");
+                }
+                break;
+        }
+
+    });
+
+    $(document).on("impress:stepleave", function(event) {
+        var id = $(event.target).attr('id');
+        switch (id) {
+            case "intro":
+                $("#intro").addClass("intro-past");
+                break;
+            case "overview":
+                lastStep = false;
+                hidePath();
+                break;
+        }
+    });
+
+    $(document).on("keyup", function(event) {
+        switch(event.keyCode) {
+            case 27:
+                if (!lastStep) {
+                    lastStep = $('.active').attr('id');
+                    api.goto("overview");
+                } else {
+                    api.goto(lastStep);
+                    lastStep = false;
+                }
+                break;
+            case 112:
+                $("#doyourbestwrong").removeClass("hidden");
+                showtime = true;
+                api.goto("doyourbestwrong");
+                break;
+            case 113:
+                $("#doyourbest").removeClass("hidden");
+                showtime = true;
+                api.goto("doyourbest");
+                break;
+        }
+    });
+});
+
+        </script>
+    </body>
+</html>
